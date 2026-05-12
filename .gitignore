@@ -1,0 +1,9 @@
+.env
+.env.save
+node_modules/
+archive.json
+archive.backup.json
+*.pdf
+*.html
+!preview.html
+.DS_Store

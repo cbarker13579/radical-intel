@@ -1,0 +1,19 @@
+{
+  "name": "the-talent-memo",
+  "version": "1.0.0",
+  "description": "Weekly AI talent intelligence digest",
+  "main": "generate.js",
+  "scripts": {
+    "start": "node generate.js",
+    "dry-run": "node generate.js --dry-run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@slack/web-api": "^7.15.2",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.13",
+    "puppeteer": "^24.42.0",
+    "resend": "^6.12.2",
+    "rss-parser": "^3.13.0"
+  }
+}
