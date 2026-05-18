@@ -1,13 +1,15 @@
-name: Weekly Talent Memo
+name: Generate Weekly Draft
 
 on:
   schedule:
-    - cron: "0 11 * * 1"  # Every Monday at 11am UTC = 7am ET
-  workflow_dispatch:       # Allows manual run from GitHub UI
+    - cron: "0 10 * * 1"  # Monday 6am ET (EDT = UTC-4, so 10am UTC)
+  workflow_dispatch:
 
 jobs:
-  send-digest:
+  generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repo
@@ -39,9 +41,17 @@ jobs:
             libcairo2 \
             libasound2t64
 
-      - name: Run digest
+      - name: Generate draft
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        run: node generate.js
+        run: node generate.js --draft
+
+      - name: Commit draft to repo
+        run: |
+          git config user.name "Talent Memo Bot"
+          git config user.email "action@github.com"
+          test -f archive.json || echo '{"urls":[]}' > archive.json
+          git add current-draft.json archive.json
+          git commit -m "Weekly draft — $(date +'%B %d, %Y')" || echo "Nothing to commit"
+          git push

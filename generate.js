@@ -10,7 +10,9 @@ const { renderEmail } = require("./template");
 const { RSS_FEEDS, SEARCH_QUERIES, LOOKBACK_DAYS } = require("./sources");
 
 const DRY_RUN = process.argv.includes("--dry-run");
+const DRAFT_MODE = process.argv.includes("--draft");
 const ARCHIVE_PATH = path.join(__dirname, "archive.json");
+const DRAFT_PATH = path.join(__dirname, "current-draft.json");
 const RECIPIENT = "carrie@radical.vc";
 
 const client = new Anthropic();
@@ -153,6 +155,22 @@ If a section has no strong items this week, return an empty array for it — do 
   return JSON.parse(jsonMatch[0]);
 }
 
+// ─── Draft banner ─────────────────────────────────────────────────────────────
+
+function addDraftBanner(html) {
+  const banner = `
+    <div style="background-color:#F59E0B;padding:16px 40px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#1B2D4F;">
+        Draft — Not Yet Sent
+      </div>
+      <div style="font-size:11px;color:#1B2D4F;margin-top:5px;opacity:0.75;">
+        To edit: open Claude Code and ask to update current-draft.json, then push to GitHub.<br/>
+        To send: GitHub Actions &rarr; Send Talent Memo &rarr; Run workflow
+      </div>
+    </div>`;
+  return html.replace('<div class="header">', banner + '\n    <div class="header">');
+}
+
 // ─── Email sending ────────────────────────────────────────────────────────────
 
 async function sendEmail(html, subject, pdfPath) {
@@ -255,7 +273,8 @@ async function postToSlack(digest, weekOf, pdfPath) {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  console.log(`\n🗞  The Talent Memo — ${DRY_RUN ? "DRY RUN" : "generating..."}\n`);
+  const modeLabel = DRY_RUN ? "DRY RUN" : DRAFT_MODE ? "DRAFT" : "generating...";
+  console.log(`\n🗞  The Talent Memo — ${modeLabel}\n`);
 
   const archive = loadArchive();
 
@@ -283,7 +302,22 @@ async function main() {
   });
   const html = renderEmail(digest, weekOf);
 
-  // 4. Dry run — print and exit
+  // 4. Draft mode — save draft JSON and send preview email
+  if (DRAFT_MODE) {
+    fs.writeFileSync(DRAFT_PATH, JSON.stringify({ weekOf, digest }, null, 2));
+    console.log(`[draft] Saved to current-draft.json`);
+
+    const draftHtml = addDraftBanner(html);
+    await sendEmail(draftHtml, `DRAFT: The Talent Memo — Week of ${weekOf}`, null);
+
+    const totalItems = Object.values(digest.sections).reduce((n, s) => n + s.length, 0);
+    console.log(`\n✓ Draft ready — ${totalItems} items across sections`);
+    console.log(`  Review the preview email, edit current-draft.json if needed,`);
+    console.log(`  then trigger "Send Talent Memo" in GitHub Actions.`);
+    return;
+  }
+
+  // 5. Dry run — print and exit
   if (DRY_RUN) {
     const previewPath = path.join(__dirname, "last-dry-run.html");
     fs.writeFileSync(previewPath, html);
@@ -297,22 +331,22 @@ async function main() {
     return;
   }
 
-  // 5. Generate PDF
+  // 6. Generate PDF
   const pdfPath = path.join(__dirname, `talent-memo-${weekOf.replace(/[, ]+/g, "-")}.pdf`);
   await generatePDF(html, pdfPath);
 
-  // 6. Send email with PDF attached
+  // 7. Send email with PDF attached
   const subject = `The Talent Memo — Week of ${weekOf}`;
   await sendEmail(html, subject, pdfPath);
 
-  // 7. Post to Slack (DM + PDF) if token is configured
+  // 8. Post to Slack (DM + PDF) if token is configured
   if (process.env.SLACK_BOT_TOKEN) {
     await postToSlack(digest, weekOf, pdfPath);
   } else {
     console.log("[slack] Skipped — set SLACK_BOT_TOKEN in .env to enable");
   }
 
-  // 8. Archive sent URLs
+  // 9. Archive sent URLs
   const sentUrls = Object.values(digest.sections)
     .flat()
     .map((item) => item.source_url)

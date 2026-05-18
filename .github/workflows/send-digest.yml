@@ -1,0 +1,54 @@
+name: Send Talent Memo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Puppeteer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libgbm-dev \
+            libnss3 \
+            libatk-bridge2.0-0 \
+            libdrm2 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxrandr2 \
+            libxfixes3 \
+            libxkbcommon0 \
+            libpango-1.0-0 \
+            libcairo2 \
+            libasound2t64
+
+      - name: Send digest from draft
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: node send-draft.js
+
+      - name: Commit archive and clear draft
+        run: |
+          git config user.name "Talent Memo Bot"
+          git config user.email "action@github.com"
+          git add archive.json
+          git rm current-draft.json 2>/dev/null || true
+          git commit -m "Sent — $(date +'%B %d, %Y')" || echo "Nothing to commit"
+          git push
