@@ -1,0 +1,137 @@
+{
+  "weekOf": "May 25, 2026",
+  "digest": {
+    "lede": "A massive week: Karpathy lands at Anthropic, Meta cuts 10% of staff at peak revenue, and the SpaceX IPO filing reveals Anthropic is paying $15 billion a year for compute. Capital is concentrating fast, the frontier labs are locking in elite talent, and the supply of displaced engineers is about to grow. Here is what it means for your pipeline. Full intel below.",
+    "sections": {
+      "market_signals": [
+        {
+          "takeaway": "Anthropic is spending $15B a year on compute. That scale means aggressive headcount growth is coming.",
+          "context": "Anthropic is paying SpaceX $1.25 billion per month through May 2029 for compute, revealed in SpaceX's IPO filing. Anthropic's revenue is described as 'taking off' but constrained by compute access, suggesting the company is scaling infrastructure faster than most realize.",
+          "source_name": "Axios Pro Rata",
+          "source_title": "Anthropic is paying SpaceX $15 billion per year",
+          "source_url": "https://www.axios.com/2026/05/20/anthropic-spacex-compute"
+        },
+        {
+          "takeaway": "Tech PE buyouts are frozen. Portfolio company hiring mandates from PE-backed firms will dry up too.",
+          "context": "Global tech buyout value in April and May 2026 combined was just $9.3 billion, down from $52.6 billion in March alone. A top tech banker told Axios the market is 'frozen,' attributed in part to AI disruption of traditional software business models.",
+          "source_name": "Axios Pro Rata",
+          "source_title": "Tech private equity is 'frozen'",
+          "source_url": "https://www.axios.com/2026/05/20/tech-private-equity-frozen"
+        },
+        {
+          "takeaway": "80% of 2026 VC dollars are going to rounds over $500M. Seed and Series A hiring signals are weak.",
+          "context": "U.S. venture capital through April 2026 is already on par with all of 2025, but the concentration is extreme: 80% of investment has gone to rounds of $500 million or more. That leaves early-stage companies with less capital to compete on comp.",
+          "source_name": "Crunchbase News",
+          "source_title": "Venture Capital Is Concentrating Faster Than Ever...",
+          "source_url": "https://news.crunchbase.com/venture/data-capital-concentrating-faster-startups-100m-ai/"
+        },
+        {
+          "takeaway": "China robotics is at a funding inflection. Watch for Chinese-trained robotics engineers entering Western labs.",
+          "context": "China-based robotics companies raised $5.6 billion across 176 deals through mid-May 2026, matching total 2021 funding in under half a year. Embodied AI and IPO momentum are driving the surge, creating a dense talent cluster that Western frontier labs will increasingly try to recruit from.",
+          "source_name": "Crunchbase News",
+          "source_title": "Embodied AI Fuels Record Robotics Funding in China...",
+          "source_url": "https://news.crunchbase.com/robotics/embodied-ai-fuels-record-funding-china-ipo-momentum-builds/"
+        }
+      ],
+      "talent_trends": [
+        {
+          "takeaway": "Karpathy joining Anthropic's pretraining team is the biggest AI talent move of the year. Expect copycat recruiting pressure on OpenAI.",
+          "context": "Andrej Karpathy, OpenAI founding member and one of the most recognized names in AI research, announced he is joining Anthropic on the pretraining team. He had been running his own AI education venture after leaving OpenAI. This is a direct signal that Anthropic is winning the reputation war for elite technical talent.",
+          "source_name": "Axios Pro Rata",
+          "source_title": "OpenAI co-founder Andrej Karpathy joins Anthropic",
+          "source_url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude",
+          "crossref": "See also in On Our Radar: Latent Space published a guide this week on how to land a pretraining role at a frontier lab, timing that looks less coincidental now."
+        },
+        {
+          "takeaway": "Meta cut 10% of staff while hitting record revenue and profits. These are senior, well-compensated engineers available now.",
+          "context": "Meta executed a significant layoff round this week despite reporting record financial performance, framed as a structural reorg toward AI-native product development. Cuts of this size at peak profitability signal deliberate role elimination, not budget pressure, which means affected employees are often strong performers caught in restructuring.",
+          "source_name": "Pragmatic Engineer",
+          "source_title": "The Pulse: Antigravity 2.0 takes 'IDE' out of its...",
+          "source_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide"
+        },
+        {
+          "takeaway": "All major model labs are now positioning as agent labs. Recruiting needs to reflect that shift in role definition.",
+          "context": "Latent Space notes a convergence across OpenAI, Anthropic, Google DeepMind, and others: every major lab is rebranding its roadmap around agentic systems. The practical talent implication is that 'model researcher' and 'agent systems engineer' are collapsing into the same hiring profile, and JDs that do not reflect this will underperform.",
+          "source_name": "Latent Space",
+          "source_title": "[AINews] All Model Labs are now Agent Labs",
+          "source_url": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent"
+        },
+        {
+          "takeaway": "Google I/O confirmed DeepMind's Demis Hassabis is now the most public face of Google's AI strategy. His team is a sourcing target.",
+          "context": "Hassabis anchored the Google I/O keynote this week, declaring we are 'standing in the foothills of the singularity' and unveiling Gemini 3.5 Flash, background agents, and AI-driven science tooling. DeepMind's integration into Google's core product roadmap means Hassabis's org is expanding, and his direct reports are among the most recruitable names in applied AI.",
+          "source_name": "MIT Tech Review",
+          "source_title": "Google I/O showed how the path for AI-driven sci...",
+          "source_url": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/"
+        }
+      ],
+      "field_notes": [
+        {
+          "takeaway": "AI coding tools have crossed a threshold. At Anthropic's dev event, most attendees had shipped AI-written PRs. Adjust how you evaluate software engineering candidates.",
+          "context": "At Anthropic's Code with Claude event in London, attendees were asked how many had shipped a pull request in the last week written entirely by AI. The response was striking enough to anchor MIT Tech Review's coverage. For talent teams, this means code output volume is no longer a reliable signal of engineering quality during assessment.",
+          "source_name": "MIT Tech Review",
+          "source_title": "Anthropic's Code with Claude showed off coding's...",
+          "source_url": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/"
+        },
+        {
+          "takeaway": "Democrats skew AI-skeptic, Republicans skew AI-positive. Candidate sentiment on AI tools now maps to party affiliation.",
+          "context": "The Axios Harris Poll 100 shows a 12-point gap between Republican and Democrat trust in OpenAI, up from 1 point in 2024. For recruiters doing intake on candidates from policy, gov-tech, or advocacy backgrounds, political affiliation is now a rough proxy for AI tool comfort, which matters for onboarding planning.",
+          "source_name": "Axios Pro Rata",
+          "source_title": "Axios Harris Poll 100: GOP embraces AI over Democrats",
+          "source_url": "https://www.axios.com/2026/05/19/axios-harris-poll-100-ai-politics"
+        },
+        {
+          "takeaway": "The frontier lab pretraining job guide is out. Use it to understand what candidates think they need to qualify.",
+          "context": "Latent Space amplified a notable blog post this week on how to land a job in pretraining at a frontier lab, timed just before Karpathy's Anthropic announcement. The content shapes candidate expectations and self-selection, which means hiring managers will start seeing more applicants who have studied this material.",
+          "source_name": "Latent Space",
+          "source_title": "[AINews] How to land a job at a frontier lab (on ...",
+          "source_url": "https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier"
+        },
+        {
+          "takeaway": "VC-backed AI startups inflating ARR metrics means headcount plans tied to those numbers may be unreliable.",
+          "context": "TechCrunch reported that some AI startups are stretching revenue metrics in investor communications, and their VCs are aware. For talent partners advising portfolio companies on hiring plans tied to ARR milestones, push for a direct revenue definition before endorsing headcount expansion.",
+          "source_name": "TechCrunch",
+          "source_title": "How VCs and founders use inflated 'ARR' to crown A...",
+          "source_url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/"
+        }
+      ],
+      "on_our_radar": [
+        {
+          "takeaway": "New AI infra unicorns Exa, Modal, and TurboPuffer are hiring. These are the infrastructure companies your portfolio will depend on.",
+          "context": "Latent Space flagged fundraises this week for three AI infrastructure companies reaching unicorn valuations: Exa (AI-native search), Modal (cloud functions for ML), and TurboPuffer (vector database). These companies are building the plumbing layer for agentic AI, and they are hiring aggressively at the infrastructure and ML engineering levels.",
+          "source_name": "Latent Space",
+          "source_title": "[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer",
+          "source_url": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa"
+        },
+        {
+          "takeaway": "Agent-native cloud platforms are growing at absurd rates. Developer tooling roles will follow.",
+          "context": "Daytona reported 74% month-over-month growth with 850,000 daily runs, and Railway has 3 million users with 100,000 signups per week and over $200,000 in monthly coding agent spend. Both are small teams scaling infrastructure to support AI agents doing real engineering work, which means platform engineering and developer relations hiring will accelerate at these companies.",
+          "source_name": "Latent Space",
+          "source_title": "Railway: The Agent-Native Cloud — Jake Cooper",
+          "source_url": "https://www.latent.space/p/railway"
+        },
+        {
+          "takeaway": "Huawei's claimed chip breakthrough, if real, would reshape who can staff a competitive AI lab outside the US.",
+          "context": "Huawei announced a new approach to advanced semiconductor manufacturing that it claims could close the gap with TSMC without access to cutting-edge Western equipment. If validated, this accelerates China's ability to train frontier models domestically, which would intensify global competition for AI researchers and expand the pool of Chinese-trained talent that Western labs will want to recruit.",
+          "source_name": "Bloomberg Tech",
+          "source_title": "Huawei Touts Chip Breakthrough to Shorten Gap With...",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-05-25/huawei-touts-chipmaking-breakthrough-to-shorten-gap-with-tsmc"
+        },
+        {
+          "takeaway": "The Trump AI executive order collapse signals ongoing federal AI policy vacuum. Gov-tech AI talent stays stranded for now.",
+          "context": "The White House pulled a planned AI and cybersecurity executive order hours before signing after tech ally pushback and presidential ambivalence. The order would have created a voluntary framework for frontier model developers to notify the government of new releases. Without it, federal AI adoption timelines remain unclear, keeping the pipeline of talent flowing from government into private labs rather than the reverse.",
+          "source_name": "Axios Pro Rata",
+          "source_title": "Why Trump's AI executive order was pulled",
+          "source_url": "https://www.axios.com/2026/05/21/trump-ai-executive-order-postponed-why"
+        }
+      ],
+      "layoff_tracker": [
+        {
+          "company": "Meta",
+          "affected": "~10% of staff (thousands of roles)",
+          "implication": "Senior Meta engineers displaced at peak company performance are high-signal candidates. Source them now before they get snapped up by other hyperscalers.",
+          "source_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide"
+        }
+      ]
+    }
+  }
+}
