@@ -1,135 +1,134 @@
 {
-  "weekOf": "May 25, 2026",
+  "weekOf": "June 1, 2026",
   "digest": {
-    "lede": "A massive week: Karpathy lands at Anthropic, Meta cuts 10% of staff at peak revenue, and the SpaceX IPO filing reveals Anthropic is paying $15 billion a year for compute. Capital is concentrating fast, the frontier labs are locking in elite talent, and the supply of displaced engineers is about to grow. Here is what it means for your pipeline. Full intel below.",
+    "lede": "Anthropic closed a $65B Series H at a $965B valuation this week, leapfrogging OpenAI on the unicorn board and dropping a new model release in the same breath. Meanwhile, enterprise AI ROI is cracking — Microsoft canceled most of its Claude Code licenses, Bain says the value isn't arriving, and token spend is getting scrutinized from the C-suite down. The Pragmatic Engineer dropped a deep look at the 2026 software job market that every portfolio company should read before their next req gets approved. Full intel below.",
     "sections": {
       "market_signals": [
         {
-          "takeaway": "Anthropic is spending $15B a year on compute. That scale means aggressive headcount growth is coming.",
-          "context": "Anthropic is paying SpaceX $1.25 billion per month through May 2029 for compute, revealed in SpaceX's IPO filing. Anthropic's revenue is described as 'taking off' but constrained by compute access, suggesting the company is scaling infrastructure faster than most realize.",
+          "takeaway": "Anthropic at $965B valuation means its talent brand is now a direct competitor to Google and Meta for top researchers.",
+          "context": "Anthropic closed a $65B Series H led by Altimeter, Dragoneer, Greenoaks, and Sequoia, more than doubling its valuation past OpenAI's $730B. Run-rate revenue crossed $47B earlier this month. With that much capital, expect aggressive researcher and engineering headcount expansion alongside a new model release (Opus 4.8) in the same week.",
           "source_name": "Axios Pro Rata",
-          "source_title": "Anthropic is paying SpaceX $15 billion per year",
-          "source_url": "https://www.axios.com/2026/05/20/anthropic-spacex-compute"
+          "source_title": "Anthropic overtakes OpenAI as the most valuable...",
+          "source_url": "https://www.axios.com/2026/05/28/anthropic-ai-fundraising-openai"
         },
         {
-          "takeaway": "Tech PE buyouts are frozen. Portfolio company hiring mandates from PE-backed firms will dry up too.",
-          "context": "Global tech buyout value in April and May 2026 combined was just $9.3 billion, down from $52.6 billion in March alone. A top tech banker told Axios the market is 'frozen,' attributed in part to AI disruption of traditional software business models.",
-          "source_name": "Axios Pro Rata",
-          "source_title": "Tech private equity is 'frozen'",
-          "source_url": "https://www.axios.com/2026/05/20/tech-private-equity-frozen"
+          "takeaway": "Cognition raised $1B at a $26B Series D — coding agent companies are flush and hiring.",
+          "context": "Cognition, maker of Devin, closed a $1B round valuing the company at $26B. The Latent Space interview with co-founder Walden Yan points to active buildout around async agent workflows, spec-to-PR pipelines, and agent memory. Companies in the coding agent space are in a hiring sprint right now.",
+          "source_name": "Latent Space",
+          "source_title": "[AINews] Cognition raises $1B in $26B Series D",
+          "source_url": "https://www.latent.space/p/ainews-cognition-raises-1b-in-26b"
         },
         {
-          "takeaway": "80% of 2026 VC dollars are going to rounds over $500M. Seed and Series A hiring signals are weak.",
-          "context": "U.S. venture capital through April 2026 is already on par with all of 2025, but the concentration is extreme: 80% of investment has gone to rounds of $500 million or more. That leaves early-stage companies with less capital to compete on comp.",
-          "source_name": "Crunchbase News",
-          "source_title": "Venture Capital Is Concentrating Faster Than Ever...",
-          "source_url": "https://news.crunchbase.com/venture/data-capital-concentrating-faster-startups-100m-ai/"
+          "takeaway": "AI infra is minting new decacorns — Fireworks and Baseten are now in that tier, with OpenRouter close behind.",
+          "context": "Both Fireworks AI and Baseten have crossed decacorn status in recent funding rounds, per Latent Space. These companies sit in the model serving and deployment layer that every AI-native startup depends on. Watch for engineering and GTM hiring ramps at both.",
+          "source_name": "Latent Space",
+          "source_title": "[AINews] New AI Infra decacorns: Fireworks, Base...",
+          "source_url": "https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks"
         },
         {
-          "takeaway": "China robotics is at a funding inflection. Watch for Chinese-trained robotics engineers entering Western labs.",
-          "context": "China-based robotics companies raised $5.6 billion across 176 deals through mid-May 2026, matching total 2021 funding in under half a year. Embodied AI and IPO momentum are driving the surge, creating a dense talent cluster that Western frontier labs will increasingly try to recruit from.",
-          "source_name": "Crunchbase News",
-          "source_title": "Embodied AI Fuels Record Robotics Funding in China...",
-          "source_url": "https://news.crunchbase.com/robotics/embodied-ai-fuels-record-funding-china-ipo-momentum-builds/"
+          "takeaway": "Enterprise AI ROI is stalling — portfolio companies need to price and position more carefully before selling to cost-conscious buyers.",
+          "context": "Bain's new survey concluded 'the technology worked, the value didn't arrive,' with AI investments delivering less cost reduction than firms predicted. Separately, Axios reported one company spent half a billion dollars in a single month on Claude licenses without usage limits, and Microsoft canceled most of its Claude Code contracts. Uber's COO publicly called AI costs harder to justify.",
+          "source_name": "Bloomberg Tech",
+          "source_title": "AI Investments Are 'Circular Bet' as ROI Disappoint...",
+          "source_url": "https://www.bloomberg.com/news/newsletters/2026-06-01/bain-survey-ai-delivers-less-cost-reduction-than-many-firms-predicted"
         }
       ],
       "talent_trends": [
         {
-          "takeaway": "Karpathy joining Anthropic's pretraining team is the biggest AI talent move of the year. Expect copycat recruiting pressure on OpenAI.",
-          "context": "Andrej Karpathy, OpenAI founding member and one of the most recognized names in AI research, announced he is joining Anthropic on the pretraining team. He had been running his own AI education venture after leaving OpenAI. This is a direct signal that Anthropic is winning the reputation war for elite technical talent.",
+          "takeaway": "Pam Bondi joins PCAST alongside Jensen Huang and Zuckerberg — AI policy fluency is now a genuine exec credential worth sourcing for.",
+          "context": "Trump appointed former AG Pam Bondi to the Presidential Council of Advisors on Science and Technology, chaired by David Sacks and Michael Kratsios. The panel includes Nvidia's Jensen Huang, Mark Zuckerberg, and Larry Ellison. The mix of tech operators and legal/policy figures on a single AI advisory body signals that regulatory and policy background is becoming table stakes for senior AI roles.",
           "source_name": "Axios Pro Rata",
-          "source_title": "OpenAI co-founder Andrej Karpathy joins Anthropic",
-          "source_url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude",
-          "crossref": "See also in On Our Radar: Latent Space published a guide this week on how to land a pretraining role at a frontier lab, timing that looks less coincidental now."
+          "source_title": "Scoop: Trump appoints Bondi to White House AI panel",
+          "source_url": "https://www.axios.com/2026/05/27/pam-bondi-white-house-ai"
         },
         {
-          "takeaway": "Meta cut 10% of staff while hitting record revenue and profits. These are senior, well-compensated engineers available now.",
-          "context": "Meta executed a significant layoff round this week despite reporting record financial performance, framed as a structural reorg toward AI-native product development. Cuts of this size at peak profitability signal deliberate role elimination, not budget pressure, which means affected employees are often strong performers caught in restructuring.",
-          "source_name": "Pragmatic Engineer",
-          "source_title": "The Pulse: Antigravity 2.0 takes 'IDE' out of its...",
-          "source_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide"
+          "takeaway": "OpenAI and Anthropic are publicly split on AI's labor impact — that debate will shape candidate expectations around job security and mission alignment.",
+          "context": "Anthropic co-founder Chris Olah doubled down at the Vatican's AI ethics conference on rhetoric about significant white-collar displacement, while OpenAI has pushed a more optimistic framing. Candidates at both labs and in adjacent companies are paying attention to this split when evaluating offers and employer brand.",
+          "source_name": "Axios Pro Rata",
+          "source_title": "OpenAI and Anthropic dig in against each other on...",
+          "source_url": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic"
         },
         {
-          "takeaway": "All major model labs are now positioning as agent labs. Recruiting needs to reflect that shift in role definition.",
-          "context": "Latent Space notes a convergence across OpenAI, Anthropic, Google DeepMind, and others: every major lab is rebranding its roadmap around agentic systems. The practical talent implication is that 'model researcher' and 'agent systems engineer' are collapsing into the same hiring profile, and JDs that do not reflect this will underperform.",
+          "takeaway": "xAI built Grok Imagine in 3 months with a small team — that speed-to-ship story is a strong talent magnet for multimodal engineers.",
+          "context": "Latent Space published a deep dive with Ethan He, who led Grok Imagine at xAI. The build timeline and product scope suggest xAI is running lean, high-output teams on video and image generation. If you're sourcing multimodal engineers, xAI's pace of shipping is making it more competitive with Anthropic and Google DeepMind on employer appeal.",
           "source_name": "Latent Space",
-          "source_title": "[AINews] All Model Labs are now Agent Labs",
-          "source_url": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent"
+          "source_title": "Why Video Agent models are next — Ethan He, xAI G...",
+          "source_url": "https://www.latent.space/p/video-agents"
         },
         {
-          "takeaway": "Google I/O confirmed DeepMind's Demis Hassabis is now the most public face of Google's AI strategy. His team is a sourcing target.",
-          "context": "Hassabis anchored the Google I/O keynote this week, declaring we are 'standing in the foothills of the singularity' and unveiling Gemini 3.5 Flash, background agents, and AI-driven science tooling. DeepMind's integration into Google's core product roadmap means Hassabis's org is expanding, and his direct reports are among the most recruitable names in applied AI.",
-          "source_name": "MIT Tech Review",
-          "source_title": "Google I/O showed how the path for AI-driven sci...",
-          "source_url": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/"
+          "takeaway": "Meta contractor layoffs in Dublin are a real candidate pipeline — these workers have content moderation, policy, and ops experience at scale.",
+          "context": "Soon-to-be-laid-off Meta contractors at the company's European HQ in Dublin are publicly protesting, citing worse severance terms than full-time employees. The roles span trust and safety, content policy, and operations functions. AI-native companies building out policy and safety teams in Europe should be moving on this pool now.",
+          "source_name": "Wired",
+          "source_title": "'We're Just Getting the Crumbs Here': Contractors...",
+          "source_url": "https://www.wired.com/story/meta-covalen-protest-strike-dublin/"
         }
       ],
       "field_notes": [
         {
-          "takeaway": "AI coding tools have crossed a threshold. At Anthropic's dev event, most attendees had shipped AI-written PRs. Adjust how you evaluate software engineering candidates.",
-          "context": "At Anthropic's Code with Claude event in London, attendees were asked how many had shipped a pull request in the last week written entirely by AI. The response was striking enough to anchor MIT Tech Review's coverage. For talent teams, this means code output volume is no longer a reliable signal of engineering quality during assessment.",
+          "takeaway": "The 2026 software job market data is out — AI engineering is growing but is not replacing traditional SWE hiring at the rate hype suggests.",
+          "context": "Pragmatic Engineer published an exclusive deep dive on the state of the software engineering job market in 2026, including data on AI engineering job growth and whether it is cannibalizing traditional SWE roles. The short answer: AI engineering is a real boom, but overall SWE hiring is still compressed. Portfolio companies need to set realistic expectations with candidates about role scope and team structure.",
+          "source_name": "Pragmatic Engineer",
+          "source_title": "State of the software engineering job market in 2026",
+          "source_url": "https://newsletter.pragmaticengineer.com/p/state-of-the-job-market-2026"
+        },
+        {
+          "takeaway": "Token spend scrutiny is changing how eng teams evaluate AI tooling — and how candidates frame their AI coding experience.",
+          "context": "Pragmatic Engineer reported a trend of both top-down and bottom-up efforts to cut AI token spend inside engineering orgs, including interesting usage stats from Cursor. GitHub Copilot's new token-based billing has also sparked backlash from devs. Candidates with experience optimizing AI tool usage and cost management are becoming more valuable to eng leaders trying to justify the spend.",
+          "source_name": "Pragmatic Engineer",
+          "source_title": "The Pulse: a trend of trying to cut back on AI spe...",
+          "source_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut"
+        },
+        {
+          "takeaway": "AI is getting booed at graduation ceremonies — expect a harder sell when recruiting new grads into AI roles that touch displacement narratives.",
+          "context": "At the University of Arizona commencement, former Google CEO Eric Schmidt told graduates their task is to shape AI and was met with audible booing, per MIT Tech Review's AI Hype Index. The class of 2026 is entering the workforce skeptical, not enthusiastic. Recruiters at AI companies should have a clear, honest pitch about mission and impact ready — generic AI hype will land flat with this cohort.",
           "source_name": "MIT Tech Review",
-          "source_title": "Anthropic's Code with Claude showed off coding's...",
-          "source_url": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/"
+          "source_title": "The AI Hype Index: AI gets booed in graduation season",
+          "source_url": "https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/"
         },
         {
-          "takeaway": "Democrats skew AI-skeptic, Republicans skew AI-positive. Candidate sentiment on AI tools now maps to party affiliation.",
-          "context": "The Axios Harris Poll 100 shows a 12-point gap between Republican and Democrat trust in OpenAI, up from 1 point in 2024. For recruiters doing intake on candidates from policy, gov-tech, or advocacy backgrounds, political affiliation is now a rough proxy for AI tool comfort, which matters for onboarding planning.",
-          "source_name": "Axios Pro Rata",
-          "source_title": "Axios Harris Poll 100: GOP embraces AI over Democrats",
-          "source_url": "https://www.axios.com/2026/05/19/axios-harris-poll-100-ai-politics"
-        },
-        {
-          "takeaway": "The frontier lab pretraining job guide is out. Use it to understand what candidates think they need to qualify.",
-          "context": "Latent Space amplified a notable blog post this week on how to land a job in pretraining at a frontier lab, timed just before Karpathy's Anthropic announcement. The content shapes candidate expectations and self-selection, which means hiring managers will start seeing more applicants who have studied this material.",
-          "source_name": "Latent Space",
-          "source_title": "[AINews] How to land a job at a frontier lab (on ...",
-          "source_url": "https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier"
-        },
-        {
-          "takeaway": "VC-backed AI startups inflating ARR metrics means headcount plans tied to those numbers may be unreliable.",
-          "context": "TechCrunch reported that some AI startups are stretching revenue metrics in investor communications, and their VCs are aware. For talent partners advising portfolio companies on hiring plans tied to ARR milestones, push for a direct revenue definition before endorsing headcount expansion.",
+          "takeaway": "VC seed term sheets are flying at 22-year-olds with AI ideas — the founder pipeline is younger and less experienced than any prior cycle.",
+          "context": "Three top VCs told TechCrunch that in the current AI frenzy, a 19-year-old founder building in AI might already have a Series A offer. That dynamic is pulling some of the strongest young technical talent toward founding rather than joining, tightening the early-career pipeline for AI startups that need junior engineers and researchers.",
           "source_name": "TechCrunch",
-          "source_title": "How VCs and founders use inflated 'ARR' to crown A...",
-          "source_url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/"
+          "source_title": "The groupthink boom: what three top VCs really thi...",
+          "source_url": "https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/"
         }
       ],
       "on_our_radar": [
         {
-          "takeaway": "New AI infra unicorns Exa, Modal, and TurboPuffer are hiring. These are the infrastructure companies your portfolio will depend on.",
-          "context": "Latent Space flagged fundraises this week for three AI infrastructure companies reaching unicorn valuations: Exa (AI-native search), Modal (cloud functions for ML), and TurboPuffer (vector database). These companies are building the plumbing layer for agentic AI, and they are hiring aggressively at the infrastructure and ML engineering levels.",
+          "takeaway": "Forward Deployed Engineer is crystallizing as a distinct role type — watch for it to become a standard title at AI-native companies within 12 months.",
+          "context": "Latent Space highlighted a quiet shift in how AI companies are structuring go-to-market: founders and forward deployed engineers (FDEs) as a paired unit. The FDE role sits between solutions engineering and product engineering, requiring both customer-facing judgment and deep technical build capability. Portfolio companies expanding into enterprise should be designing this role now, not after the first big customer complaint.",
           "source_name": "Latent Space",
-          "source_title": "[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer",
-          "source_url": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa"
+          "source_title": "[AINews] Founders and Forward Deployed Engineers",
+          "source_url": "https://www.latent.space/p/ainews-founders-and-forward-deployed"
         },
         {
-          "takeaway": "Agent-native cloud platforms are growing at absurd rates. Developer tooling roles will follow.",
-          "context": "Daytona reported 74% month-over-month growth with 850,000 daily runs, and Railway has 3 million users with 100,000 signups per week and over $200,000 in monthly coding agent spend. Both are small teams scaling infrastructure to support AI agents doing real engineering work, which means platform engineering and developer relations hiring will accelerate at these companies.",
-          "source_name": "Latent Space",
-          "source_title": "Railway: The Agent-Native Cloud — Jake Cooper",
-          "source_url": "https://www.latent.space/p/railway"
+          "takeaway": "Snap alumni are self-organizing into an angel fund — the social/consumer AI wave is coming and those networks will be first to see the deals.",
+          "context": "Twenty Snap alumni launched Ghost Angels, a fund focused on backing the next generation of social media. This is the same playbook as PayPal Mafia-style alumni networks and tends to surface tight-knit founder clusters. If your portfolio is in consumer AI or social, these networks are worth mapping now.",
+          "source_name": "TechCrunch",
+          "source_title": "Snap alums unveil Ghost Angels fund",
+          "source_url": "https://techcrunch.com/2026/05/30/snap-alums-unveil-ghost-angels-fund/"
         },
         {
-          "takeaway": "Huawei's claimed chip breakthrough, if real, would reshape who can staff a competitive AI lab outside the US.",
-          "context": "Huawei announced a new approach to advanced semiconductor manufacturing that it claims could close the gap with TSMC without access to cutting-edge Western equipment. If validated, this accelerates China's ability to train frontier models domestically, which would intensify global competition for AI researchers and expand the pool of Chinese-trained talent that Western labs will want to recruit.",
+          "takeaway": "Nvidia entering the PC chip market means a new hardware platform is forming — physical AI and edge inference roles will follow.",
+          "context": "Nvidia announced the RTX Spark Superchip for laptops and desktops, with Dell and Lenovo shipping devices this fall. Anthropic and OpenAI are already confirmed users of Nvidia's new Vera chip. As inference moves to the edge, expect new roles around on-device model optimization, edge deployment engineering, and hardware-software co-design to surface at AI labs and applied companies.",
           "source_name": "Bloomberg Tech",
-          "source_title": "Huawei Touts Chip Breakthrough to Shorten Gap With...",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-05-25/huawei-touts-chipmaking-breakthrough-to-shorten-gap-with-tsmc"
+          "source_title": "Nvidia Is Taking On Intel and AMD With AI Chip for...",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd"
         },
         {
-          "takeaway": "The Trump AI executive order collapse signals ongoing federal AI policy vacuum. Gov-tech AI talent stays stranded for now.",
-          "context": "The White House pulled a planned AI and cybersecurity executive order hours before signing after tech ally pushback and presidential ambivalence. The order would have created a voluntary framework for frontier model developers to notify the government of new releases. Without it, federal AI adoption timelines remain unclear, keeping the pipeline of talent flowing from government into private labs rather than the reverse.",
-          "source_name": "Axios Pro Rata",
-          "source_title": "Why Trump's AI executive order was pulled",
-          "source_url": "https://www.axios.com/2026/05/21/trump-ai-executive-order-postponed-why"
+          "takeaway": "Quantinuum's IPO at $1.46B signals quantum computing is entering a new hiring phase — technical talent demand will follow the public market attention.",
+          "context": "Quantinuum, backed by Honeywell, raised its IPO target to $1.46B and increased its share count. As quantum moves from research to product, the roles being created are shifting from pure physics PhDs toward quantum software engineers, error correction specialists, and hybrid classical-quantum systems architects. A small but real talent market is forming.",
+          "source_name": "Bloomberg Tech",
+          "source_title": "Honeywell-Backed Quantinuum Boosts IPO Target to $...",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/honeywell-backed-quantinuum-boosts-ipo-target-to-1-46-billion"
         }
       ],
       "layoff_tracker": [
         {
-          "company": "Meta",
-          "affected": "~10% of staff (thousands of roles)",
-          "implication": "Senior Meta engineers displaced at peak company performance are high-signal candidates. Source them now before they get snapped up by other hyperscalers.",
-          "source_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide"
+          "company": "Meta (contractor wave, Dublin)",
+          "affected": "Undisclosed number of contractors",
+          "implication": "Trust and safety, content policy, and ops professionals with Meta-scale experience are entering the market in Europe — strong pipeline for AI companies building safety and policy functions.",
+          "source_url": "https://www.wired.com/story/meta-covalen-protest-strike-dublin/"
         }
       ]
     }
