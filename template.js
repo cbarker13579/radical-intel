@@ -1,31 +1,52 @@
+function calcReadTime(digest) {
+  const allText = [
+    digest.lede || "",
+    ...Object.values(digest.sections).flat().flatMap(item => [
+      item.takeaway || "",
+      item.context || "",
+      item.implication || "",
+    ]),
+  ].join(" ");
+  const words = allText.trim().split(/\s+/).filter(Boolean).length;
+  const minutes = Math.ceil(words / 238);
+  return `${minutes} min read`;
+}
+
 function renderItem(item) {
-  const crossref = item.crossref
-    ? `<div class="item-crossref">→ ${escapeHtml(item.crossref)}</div>`
-    : "";
-
-  const linkLabel = item.source_title
-    ? escapeHtml(item.source_title)
-    : "More details here";
-
-  const link = item.source_url
-    ? `<a class="item-link" href="${item.source_url}">&rarr; ${linkLabel}</a>`
-    : "";
-  return `
-    <div class="item">
+  if (item.featured) {
+    const linkLabel = item.source_title ? escapeHtml(item.source_title) : "More details here";
+    const link = item.source_url
+      ? `<a class="item-link" href="${item.source_url}">&rarr; ${linkLabel}</a>`
+      : "";
+    const crossref = item.crossref
+      ? `<div class="item-crossref">→ ${escapeHtml(item.crossref)}</div>`
+      : "";
+    return `
+    <div class="item item-featured">
+      <div class="item-featured-label">Featured</div>
       <div class="item-takeaway">${escapeHtml(item.takeaway)}</div>
       <div class="item-context">${escapeHtml(item.context)}</div>
       ${link}
       ${crossref}
+    </div>`;
+  }
+
+  const link = item.source_url
+    ? `<a class="item-brief-link" href="${item.source_url}">&rarr; ${escapeHtml(item.source_title || "More")}</a>`
+    : "";
+  return `
+    <div class="item item-brief">
+      <span class="item-brief-bullet">&bull;</span>
+      <span class="item-brief-text">${escapeHtml(item.takeaway)} ${link}</span>
     </div>`;
 }
 
 function renderLayoffTracker(items) {
   if (!items || items.length === 0) return "";
   const rows = items.map(item => `
-    <div class="item">
-      <div class="item-takeaway">${escapeHtml(item.company)} — ${escapeHtml(item.affected)}</div>
-      <div class="item-context">${escapeHtml(item.implication)}</div>
-      ${item.source_url ? `<a class="item-link" href="${item.source_url}">&rarr; More details here</a>` : ""}
+    <div class="item item-brief">
+      <span class="item-brief-bullet">&bull;</span>
+      <span class="item-brief-text"><strong>${escapeHtml(item.company)}</strong> — ${escapeHtml(item.affected)}. ${escapeHtml(item.implication)} ${item.source_url ? `<a class="item-brief-link" href="${item.source_url}">&rarr; More</a>` : ""}</span>
     </div>`).join("");
   return `
     <div class="section">
@@ -62,12 +83,13 @@ function escapeHtml(str) {
 
 function renderEmail(digest, weekOf) {
   const { lede, sections } = digest;
+  const readTime = calcReadTime(digest);
 
   const sectionsHtml = [
     renderSection("📈", "Market Signals",  sections.market_signals),
     renderSection("🔄", "Talent Trends",   sections.talent_trends),
     renderSection("🛠️", "Field Notes",     sections.field_notes),
-    renderSection("🔭", "On Our Radar",    sections.on_our_radar),
+    renderSection("🔭", "More From This Week", sections.on_our_radar),
     renderLayoffTracker(sections.layoff_tracker),
   ].join("");
 
@@ -173,11 +195,19 @@ function renderEmail(digest, weekOf) {
       border-radius: 0 0 4px 4px;
       padding: 6px 0;
     }
-    .item {
-      padding: 20px;
-      border-bottom: 1px solid #F0F4FA;
-    }
+    .item { border-bottom: 1px solid #F0F4FA; }
     .item:last-child { border-bottom: none; }
+
+    /* Featured item — full card */
+    .item-featured { padding: 20px; }
+    .item-featured-label {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #E8185C;
+      margin-bottom: 6px;
+    }
     .item-takeaway {
       font-size: 15px;
       font-weight: 700;
@@ -206,6 +236,35 @@ function renderEmail(digest, weekOf) {
       margin-top: 6px;
       font-style: italic;
     }
+
+    /* Brief item — bullet line */
+    .item-brief {
+      padding: 11px 20px;
+      display: flex;
+      align-items: baseline;
+      gap: 9px;
+    }
+    .item-brief-bullet {
+      color: #E8185C;
+      font-size: 14px;
+      flex-shrink: 0;
+      line-height: 1.5;
+    }
+    .item-brief-text {
+      font-size: 13px;
+      line-height: 1.55;
+      color: #1B2D4F;
+      font-weight: 500;
+    }
+    .item-brief-link {
+      color: #E8185C;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12px;
+      margin-left: 4px;
+      white-space: nowrap;
+    }
+
     .footer {
       background-color: #1B2D4F;
       margin-top: 36px;
@@ -237,7 +296,7 @@ function renderEmail(digest, weekOf) {
     <div class="header">
       <div class="header-eyebrow">Talent Intelligence for the AI Era</div>
       <div class="header-title">The <span>Talent</span> Memo</div>
-      <div class="header-date">Week of ${weekOf}</div>
+      <div class="header-date">Week of ${weekOf} &nbsp;&middot;&nbsp; ${readTime}</div>
     </div>
 
     <div class="lede">

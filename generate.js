@@ -94,13 +94,16 @@ RULES:
 - Voice: write like a tech-savvy talent advisor talking to a peer. Direct, specific, a little dry. Not corporate, not hype, not AI-sounding. No em dashes. No "it's worth noting." No "this signals that." Just say the thing.
 - Takeaways must be short — one punchy sentence under 20 words. Lead with the so-what, not the news.
 - On Our Radar items should be forward-looking inferences and pattern recognition, not just more news
-- Aim for 2–3 items per section in a slow week, up to 5 in a busy one — let the signal volume guide you
+- Aim for 10-12 items total across all sections. Quality over quantity — if the week is slow, 8 strong items beats 14 weak ones. Distribute across sections naturally but do not pad.
+- Mark exactly 2 items across the entire digest as featured: true — the biggest, most impactful stories this week with the clearest talent implications. All other items must have featured: false.
+- Featured items get a full context paragraph. Non-featured items must have NO context field — takeaway only.
 - Each item MUST include the source URL
 
 ITEM FORMAT (JSON):
 Each item must have:
-- "takeaway": the talent implication in one short sentence (under 20 words). Bold lead. What should the reader do or know? No em dashes. No "this signals that." Just say it.
-- "context": 2 sentences max. Key facts, names, numbers. If a third sentence is needed to make the talent implication clear, include it — otherwise stop at two. No filler, no em dashes.
+- "takeaway": one punchy sentence under 20 words. The so-what for a recruiter. No em dashes. No "this signals that." Just say it.
+- "context": 2-3 sentences of key facts and talent implication. ONLY include this field for featured: true items. Omit entirely for featured: false items.
+- "featured": true for the 2 most impactful stories this week, false for all others
 - "source_name": publication name
 - "source_title": the original article title. If over 60 characters, truncate to the first 55 chars and add "...". If there is no clear title, use null.
 - "source_url": full URL
@@ -109,10 +112,10 @@ Return a JSON object with this exact structure:
 {
   "lede": "1-2 sentences. Sound like a person who follows this space closely, not a newsletter. Specific, no em dashes, no hype. Tease the 2-3 biggest themes, close with a short talent angle like 'here is what it means for your pipeline' or 'the hiring implications are real', then end with: Full intel below",
   "sections": {
-    "market_signals": [ { "takeaway": "...", "context": "...", "source_name": "...", "source_title": "...", "source_url": "..." } ],
-    "talent_trends":  [ { "takeaway": "...", "context": "...", "source_name": "...", "source_title": "...", "source_url": "...", "crossref": "optional cross-ref line" } ],
-    "field_notes":    [ { "takeaway": "...", "context": "...", "source_name": "...", "source_title": "...", "source_url": "..." } ],
-    "on_our_radar":   [ { "takeaway": "...", "context": "...", "source_name": "...", "source_title": "...", "source_url": "..." } ],
+    "market_signals": [ { "takeaway": "...", "context": "only if featured", "featured": false, "source_name": "...", "source_title": "...", "source_url": "..." } ],
+    "talent_trends":  [ { "takeaway": "...", "context": "only if featured", "featured": false, "source_name": "...", "source_title": "...", "source_url": "...", "crossref": "optional" } ],
+    "field_notes":    [ { "takeaway": "...", "context": "only if featured", "featured": false, "source_name": "...", "source_title": "...", "source_url": "..." } ],
+    "on_our_radar":   [ { "takeaway": "...", "context": "only if featured", "featured": false, "source_name": "...", "source_title": "...", "source_url": "..." } ],
     "layoff_tracker": [ { "company": "...", "affected": "e.g. ~200 roles", "implication": "one-line talent angle", "source_url": "..." } ]
   }
 }
