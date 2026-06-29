@@ -1,125 +1,125 @@
 {
-  "weekOf": "June 22, 2026",
+  "weekOf": "June 29, 2026",
   "digest": {
-    "lede": "The week's two biggest talent stories are pulling in opposite directions: SpaceX's $60B acquisition of Cursor signals that AI coding tools are now strategic infrastructure, not just developer toys, while Anthropic's export ban fight with the Trump administration is reshaping which AI roles are viable and where. John Jumper's move from DeepMind to Anthropic, Meta's engineering org implosion, and the White House AI power vacuum add more threads to pull. The hiring implications are real. Full intel below.",
+    "lede": "The week's biggest story is the US government treating AI model releases like weapons exports — Anthropic's Mythos cleared for limited use, OpenAI's GPT-5.6 restricted before launch, and Asian labs moving fast to fill the gap. Meanwhile, Google DeepMind is hemorrhaging senior researchers to OpenAI, and OpenAI is raiding Apple hardware leadership. The candidate pool implications are real. Full intel below.",
     "sections": {
       "market_signals": [
         {
-          "takeaway": "SpaceX acquiring Cursor for $60B is the largest AI startup exit ever and reframes coding tools as core infrastructure plays.",
-          "context": "SpaceX's acquisition of Cursor gives the company a foothold in enterprise software development at a moment when AI-assisted coding is compressing headcount across large engineering orgs. The $60B price tag, funded in part by SpaceX's post-IPO capital raise, signals that the biggest infrastructure players see AI dev tools as strategic rather than supplementary. For recruiters: the founders and early team at Cursor are now inside SpaceX, and the remaining Anysphere equity holders and adjacent AI coding startup talent are in motion.",
-          "featured": true,
-          "source_name": "Crunchbase News",
-          "source_title": "SpaceX Acquires AI Coding Tool Cursor For $60B...",
-          "source_url": "https://news.crunchbase.com/ma/spcx-acquires-ai-coding-cursor-largest-startup-ma-deal-2026/"
-        },
-        {
-          "takeaway": "Groq raised $650M to pivot from chips to AI compute provider — a headcount build is coming.",
-          "featured": false,
-          "source_name": "Bloomberg Tech",
-          "source_title": "Groq Raises $650 Million to Help Startup Pivot ...",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-06-22/groq-raises-650-million-to-help-startup-pivot-after-nvidia-deal"
-        },
-        {
-          "takeaway": "Robotics venture funding hit $18.8B in 2026 YTD, already surpassing all of 2025 — hardware and embodied AI hiring is accelerating.",
+          "takeaway": "Menlo Ventures raised $3B for AI startups — more dry powder means more portfolio companies hiring fast.",
           "featured": false,
           "source_name": "Crunchbase News",
-          "source_title": "Sector Snapshot: Robotics Startups On Fire As V...",
-          "source_url": "https://news.crunchbase.com/robotics/startup-venture-funding-surges-2026-data/"
+          "source_title": "Anthropic Backer Menlo Ventures Raises $3B...",
+          "source_url": "https://news.crunchbase.com/venture/menlo-ventures-raise-ai-startup-funding-across-stages-anthropic/"
         },
         {
-          "takeaway": "Reflection AI locked a multibillion-dollar compute deal with SpaceX — watch for aggressive ML and infra hiring there.",
+          "takeaway": "SpaceX's $60B Cursor acquisition makes 2026 a record M&A year — integration headcount needs will follow.",
+          "featured": false,
+          "source_name": "Crunchbase News",
+          "source_title": "Cursor Deal Puts US On Track For Record Startup...",
+          "source_url": "https://news.crunchbase.com/ma/2026-mergers-acquisitions-record-cursor-spcx/"
+        },
+        {
+          "takeaway": "Anthropic's Mythos cleared for 100-plus US companies and agencies — enterprise AI hiring demand will spike as deployments scale.",
+          "featured": false,
+          "source_name": "TechCrunch",
+          "source_title": "Trump Admin releases Anthropic Mythos to be use...",
+          "source_url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/"
+        },
+        {
+          "takeaway": "Millennium Management is building an internal AI lab — quant funds competing for the same ML talent as labs is a real pressure you should flag to portfolio companies.",
           "featured": false,
           "source_name": "Bloomberg Tech",
-          "source_title": "SpaceX Inks Multibillion-Dollar Computing Deal W...",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-06-22/spacex-inks-multibillion-dollar-computing-deal-with-reflection-ai"
+          "source_title": "Millennium Builds AI Lab in Push for Cutting-Ed...",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-06-29/millennium-builds-ai-lab-in-push-for-cutting-edge-products"
         }
       ],
       "talent_trends": [
         {
-          "takeaway": "Nobel laureate John Jumper leaving DeepMind for Anthropic is the most significant researcher move of the year so far.",
-          "context": "Jumper, who won the 2024 Nobel Prize in Chemistry for AlphaFold, is departing Google DeepMind for Anthropic. The article notes he is not the only high-profile name leaving DeepMind recently, suggesting a broader talent drain from Google's flagship AI lab. For VC talent partners: this is a signal to probe DeepMind portfolio exposure and check which other researchers are moving. Anthropic's ability to attract Nobel-level science talent despite the export ban controversy suggests its research brand remains strong.",
+          "takeaway": "Google DeepMind lost Noam Shazeer to OpenAI — when a $2B acqui-hire walks, the talent war is escalating beyond normal retention tools.",
+          "context": "Noam Shazeer, co-author of the 2017 'Attention Is All You Need' transformer paper and one of the most consequential researchers in AI, left Google DeepMind for OpenAI last week. Google had paid over $2 billion to acqui-hire Shazeer and part of his Character.ai team. His departure is the second high-profile researcher Google DeepMind lost in a single week. For talent partners at AI labs and their investors, this is a signal that even historically unprecedented retention packages are not holding at the frontier — and that OpenAI's gravitational pull around AGI timelines is now the dominant recruiting pitch.",
+          "featured": true,
+          "source_name": "Axios Pro Rata",
+          "source_title": "Google takes the hit in AI's talent war",
+          "source_url": "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures"
+        },
+        {
+          "takeaway": "Apple's VP of Vision Pro is joining OpenAI's hardware team — senior hardware leaders are now a target segment for AI lab recruiting.",
+          "context": "Paul Meade, the Apple VP responsible for Vision Pro, is reportedly leaving for OpenAI's hardware team. This is a meaningful signal: OpenAI is building out a serious physical hardware organization and is looking to Apple's executive bench for that talent. For recruiters advising AI-native companies, Apple's hardware leadership layer is now a live sourcing pool — especially anyone with experience in spatial computing, optics, or consumer device manufacturing. Watch for more Apple hardware departures as the OpenAI device story develops.",
           "featured": true,
           "source_name": "TechCrunch",
-          "source_title": "Nobel laureate John Jumper is leaving DeepMind f...",
-          "source_url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
-          "crossref": "See also in Market Signals: The Anthropic export ban is creating organizational pressure even as the company lands top research talent."
+          "source_title": "Apple Vision Pro exec is reportedly leaving for...",
+          "source_url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/"
         },
         {
-          "takeaway": "Meta replaced WhatsApp's Will Cathcart with CRED founder Kunal Shah — an external consumer product leader over an internal promotion.",
+          "takeaway": "Ford rehired retired engineers after AI underdelivered — a useful counterpoint when portfolio companies are cutting experienced staff to over-index on AI.",
           "featured": false,
           "source_name": "TechCrunch",
-          "source_title": "WhatsApp gets new chief as Meta taps India's CRE...",
-          "source_url": "https://techcrunch.com/2026/06/22/whatsapp-gets-new-chief-as-meta-taps-indias-cred-founder-kunal-shah-and-invests-900m-in-startup/"
+          "source_title": "Ford rehires 'gray beard' engineers after AI fall...",
+          "source_url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/"
         },
         {
-          "takeaway": "Meta is dismantling its engineering org in an AI-fueled restructure — morale is collapsing and exits are increasing.",
+          "takeaway": "Ex-Meta CTO Mike Schroepfer says hard tech is the next moat — watch Gigascale Capital's portfolio for infra hiring signals.",
           "featured": false,
-          "source_name": "Pragmatic Engineer",
-          "source_title": "Why is Meta destroying its engineering organizat...",
-          "source_url": "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering"
-        },
-        {
-          "takeaway": "The White House AI team is losing key players — Sacks stepping back and Krishnan leaving creates a policy vacuum worth monitoring.",
-          "featured": false,
-          "source_name": "Axios Pro Rata",
-          "source_title": "Inside the White House's AI power center",
-          "source_url": "https://www.axios.com/2026/06/18/inside-white-house-ai-power-center"
+          "source_name": "Crunchbase News",
+          "source_title": "Why Ex-Meta CTO Mike Schroepfer Says It's A Gre...",
+          "source_url": "https://news.crunchbase.com/venture/hard-tech-infrastructure-moat-schroepfer-gigascale/",
+          "crossref": "See also in Market Signals: Menlo's $3B raise reflects the same infra investment thesis Schroepfer is backing."
         }
       ],
       "field_notes": [
         {
-          "takeaway": "Trump's export ban on Anthropic's Mythos and Fable models is creating real uncertainty about which AI roles and research directions are viable.",
+          "takeaway": "OpenAI's Codex token usage grew 56x in R&D and 32x in customer support since November — agentic roles are compressing faster than most hiring plans anticipate.",
+          "featured": false,
+          "source_name": "Latent Space",
+          "source_title": "[AINews] OpenAI reports median internal Codex ou...",
+          "source_url": "https://www.latent.space/p/ainews-openai-reports-median-internal"
+        },
+        {
+          "takeaway": "The US government is now pre-approving AI model releases — factor regulatory clearance timelines into any hiring plan tied to product launch milestones.",
           "featured": false,
           "source_name": "Axios Pro Rata",
-          "source_title": "Anthropic export ban sounds alarms for AI industry",
-          "source_url": "https://www.axios.com/2026/06/16/ai-anthropic-export-controls"
+          "source_title": "Trump administration asks OpenAI to limit next m...",
+          "source_url": "https://www.axios.com/2026/06/25/trump-administration-openai-gpt-model-release"
         },
         {
-          "takeaway": "China eliminated 12,000 university degree programs to accelerate AI-era workforce prep — the global competition for AI talent is intensifying at the pipeline level.",
+          "takeaway": "Asian labs are shipping Mythos-level models without export restrictions — the global AI talent market is no longer anchored to US lab access.",
           "featured": false,
-          "source_name": "Bloomberg Tech",
-          "source_title": "China Makes Sweeping Education Reforms to Prepar...",
-          "source_url": "https://www.bloomberg.com/news/newsletters/2026-06-22/china-s-ai-programs-for-students-eliminate-12-000-university-degrees"
+          "source_name": "TechCrunch",
+          "source_title": "Asian AI startups launch Mythos-like models as A...",
+          "source_url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/"
         },
         {
-          "takeaway": "Subquadratic came out of stealth claiming a fundamental LLM architecture breakthrough — if it holds up, this is a talent magnet for ML researchers.",
+          "takeaway": "China's GLM-5.2 matches Claude Opus 4.8 at half the cost — international AI researchers now have compelling local alternatives to US lab employment.",
           "featured": false,
-          "source_name": "MIT Tech Review",
-          "source_title": "A startup claims it broke through a bottleneck t...",
-          "source_url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/"
+          "source_name": "Axios Pro Rata",
+          "source_title": "China's new open-source model accelerates AI hac...",
+          "source_url": "https://www.axios.com/2026/06/25/china-glm-52-open-source-hackers"
         }
       ],
       "on_our_radar": [
         {
-          "takeaway": "AI CEOs are now seated as heads of state at G7 — the geopolitical role of AI labs is creating a new category of policy and government affairs hiring.",
+          "takeaway": "Flexion Robotics, founded by ex-Nvidia engineers, is training humanoid robots to do office work — this is where robotics and enterprise AI talent will converge next.",
+          "featured": false,
+          "source_name": "Wired",
+          "source_title": "This Humanoid Robot Is a Terrifyingly Competent...",
+          "source_url": "https://www.wired.com/story/this-robot-is-going-to-replace-your-interns-flexion/"
+        },
+        {
+          "takeaway": "Q2 produced the most billion-dollar startup exits since 2021 — a liquidity wave means experienced operators are about to re-enter the job market.",
+          "featured": false,
+          "source_name": "Crunchbase News",
+          "source_title": "Crunchbase Data: Q2 Brought The Most Billion-Do...",
+          "source_url": "https://news.crunchbase.com/public/data-billion-dollar-startup-exits-ma-ipo-spcx-q2-2026/"
+        },
+        {
+          "takeaway": "The pro-AI policy coalition is fracturing over national security vs. competitiveness — expect AI safety and policy roles to multiply at labs navigating government relations.",
           "featured": false,
           "source_name": "Axios Pro Rata",
-          "source_title": "New global order: AI CEOs as heads of nation-states",
-          "source_url": "https://www.axios.com/2026/06/20/ai-tech-moguls-g7"
-        },
-        {
-          "takeaway": "Nvidia is leading humanoid robot safety research — expect a wave of safety engineer and robotics ML roles as humanoids move toward human proximity.",
-          "featured": false,
-          "source_name": "Bloomberg Tech",
-          "source_title": "Nvidia Seeks to Make Humanoid AI Robots Safer Ar...",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-06-22/nvidia-seeks-to-make-humanoid-ai-robots-safer-around-humans"
-        },
-        {
-          "takeaway": "Midjourney launched a medical imaging product with zero external funding — bootstrapped AI labs entering healthcare need domain-specific clinical and regulatory talent fast.",
-          "featured": false,
-          "source_name": "Latent Space",
-          "source_title": "[AINews] Midjourney Medical: scan your organs li...",
-          "source_url": "https://www.latent.space/p/ainews-midjourney-medical-scan-your"
+          "source_title": "The pro-AI movement is splintering",
+          "source_url": "https://www.axios.com/2026/06/29/trump-ai-model-release-delays-tech-backlash"
         }
       ],
-      "layoff_tracker": [
-        {
-          "company": "Lucid Motors",
-          "affected": "~18% of staff",
-          "implication": "EV-adjacent hardware and manufacturing engineers entering the market; relevant for robotics and physical AI startups hiring mechatronics talent.",
-          "source_url": "https://techcrunch.com/2026/06/22/lucid-motors-new-ceo-cuts-18-of-staff-to-simplify-the-company/"
-        }
-      ]
+      "layoff_tracker": []
     }
   }
 }
